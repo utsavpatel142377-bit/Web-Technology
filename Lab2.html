@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Reg Form</title>
+  </head>
+  <body>
+    <h1>Student Registration Form</h1>
+    <form action="welcome.html"  method="get"  target="_blank" novalidate autocomplete="off">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>Full Name:</label>
+        <input type="text" id="name" name="reg_name" pattern="[A-Za-z ]{3,50}"/>
+        <br />
+        <br />
+
+        <label>Email:</label>
+        <input type="email"  name="reg_email" pattern="[a-zA-Z]+\.{1}[0-9]{6}@marwadiuniversity\.ac\.in"/>
+        <br />
+        <br />
+
+        <label>Password:</label>
+        <input type="password" name="reg_password" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}"/>
+        <br />
+        <br />
+
+        <label>Phone number:</label>
+        <input type="tel" name="reg_phone"  pattern="[0-9]{10}"/>
+        <br />
+        <br />
+
+        <label>Age:</label>
+        <input type="number" name="reg_age"  pattern="[0-9]{2}"/>
+        <br />
+        <br />
+
+        <label>Gender:</label>
+        <input type="radio" name="reg_gender" value="Male"/><label>Male</label> 
+        <input type="radio" name="reg_gender" value="Female"/><label>Female</label
+        >
+        <br />
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences & Extras</legend>
+
+        <label>Upload Profile Picture:</label>
+        <input type="file" name="reg_file"/>
+        <br />
+        <br />
+
+        <label>color:</label>
+        <input type="color" name="reg_color"/>
+        <br />
+        <br />
+
+        <label>Search for Course:</label>
+        <input type="search" name="reg_search"/>
+        <br />
+        <br />
+
+        <label>Course Interest Range:</label>
+        <input type="range" name="reg_range"/>
+        <br />
+        <br />
+
+        <label>Personal Website:</label>
+        <input type="url" pattern="https?://.+" name="reg_web"/>
+        <br />
+        <br />
+
+        <label>Course Type:</label>
+        <select name="reg_course_data">
+          <optgroup label="engg">
+            <option value="CE">CE</option>
+            <option value="EE">EE</option>
+            <option value="ME">ME</option>
+            <option value="CIV">CIV</option>
+          </optgroup>
+          <optgroup label="Management">
+            <option value="BBA">BBA</option>
+            <option value="MBA">MBA</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+
+        <label>Preferred Country:</label>
+        <input list="countries" name="reg_country"/>
+        <datalist id="countries">
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="India">India</option>
+          <option value="Japan">Japan</option>
+        </datalist>
+
+        <br />
+        <br />
+        <label>Agree to Terms:</label>
+        <input type="checkbox" name="reg_terms" value="I agree"/><label>I agree</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Date & Time Info</legend>
+
+        <label>Select Date of Birth: </label>
+        <input type="date" name="reg_date"/>
+        <br />
+        <br />
+
+        <label>Select Time: </label>
+        <input type="time" name="reg_time"/>
+        <br />
+        <br />
+
+        <label>Select month: </label>
+        <input type="month" name="reg_month"/>
+        <br />
+        <br />
+
+        <label>Select week: </label>
+        <input type="week" name="reg_week"/>
+        <br />
+        <br />
+
+        <label>Select date and time: </label>
+        <input type="datetime-local" name="reg_date_time"/>
+        <br />
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Form Controls</legend>
+
+        <button onclick="sub()">Click Me</button>
+        <input type="image" src="Image.png" alt="Register Now" height="50" width="50" />
+        <br /><br />
+
+        <input type="submit" />
+        <br /><br />
+
+        <input type="reset" />
+        <br /><br />
+      </fieldset>
+    </form>
+    <script>
+      function sub()
+      {
+
+      }
+    </script>
+  </body>
+</html>
